@@ -23,5 +23,16 @@ Command-line password validation script that checks:
 
 Returns detailed validation feedback.
 
+### Pentest Data Mutator
+Random data generation tool created as part of my Python learning process.
+
+Features:
+- Generate complex 12-character passwords
+- Create unique 10-character session tokens
+- Produce weighted binary-style noise strings
+- Shuffle IP address lists for less predictable scans
+
+Focus: practicing the random library and exploring how randomized data can reduce predictable patterns.
+
 ## Goal
 Practice Python fundamentals and build small CLI tools.
