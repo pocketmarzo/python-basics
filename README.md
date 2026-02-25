@@ -16,6 +16,7 @@ User management system with:
 ### Password Validator
 Command-line password validation script that checks:
 
+**Features:**
 - Minimum length (8+ characters)
 - Common password blacklist
 - Presence of at least one digit
@@ -26,7 +27,7 @@ Returns detailed validation feedback.
 ### Pentest Data Mutator
 Random data generation tool created as part of my Python learning process.
 
-Features:
+**Features:**
 - Generate complex 12-character passwords
 - Create unique 10-character session tokens
 - Produce weighted binary-style noise strings
@@ -34,13 +35,23 @@ Features:
 
 Focus: practicing the random library and exploring how randomized data can reduce predictable patterns.
 
-# ASCII Art Generator (Figlet)
+### ASCII Art Generator (Figlet)
 A Python command-line tool that transforms plain text into stylized ASCII art banners using the `pyfiglet` library.
 
-Features:
+**Features:**
 - Dynamic Font Selection: Support for custom fonts via command-line arguments.
 - Random Mode: Automatically picks a random font if no arguments are provided.
 - Error Handling: Validates font names and command-line usage using the `sys` library.
+
+### Farewell Formatter
+A CLI tool that takes a list of names and formats them into a grammatically correct farewell string using the Oxford comma.
+
+**Features:**
+- Dynamic List Joining: Automatically handles lists of any length (1, 2, or 3+ names).
+- Oxford Comma Support: Ensures professional English formatting using the `inflect` library.
+- Robust Input Handling: Uses `try-except` blocks to gracefully handle EOF signals (`Ctrl-D`).
+
+Focus: mastering external libraries, list manipulation, and handling user input interruptions.
 
 ## Goal
 Practice Python fundamentals and build small CLI tools.
