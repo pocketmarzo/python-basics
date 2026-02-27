@@ -73,7 +73,7 @@ A command-line tool written in Python to extract hidden metadata (EXIF) from ima
 - Direct Map Link: Generates a clickable Google Maps link for the exact location.
 - Binary Filtering: Skips unreadable binary data for a clean terminal output.
 
-## How to Install
+# How to Install
 1. Clone this repository.
 2. Install the required libraries:
    ```bash
