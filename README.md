@@ -63,21 +63,15 @@ An interactive CLI game where the user tries to guess a secret number generated 
 
 Focus: practicing the random module, nested while loops, and advanced exception handling with try-except blocks.
 
-### OSINT Photo Sniffer
-
-A command-line tool written in Python to extract hidden metadata (EXIF) from image files. It supports standard formats like JPEG and modern iPhone formats (HEIC).
+### Little Professor 🎓
+A CLI-based math game inspired by the classic 1970s toy. Built as part of the **CS50P** curriculum.
 
 **Features**
-- HEIC Support: Seamlessly opens iPhone photos using `pillow-heif`.
-- GPS Extraction: Automatically finds GPS coordinates in the file.
-- Direct Map Link: Generates a clickable Google Maps link for the exact location.
-- Binary Filtering: Skips unreadable binary data for a clean terminal output.
+- Adjustable Difficulty: Select Level 1 (single digits), 2 (double digits), or 3 (triple digits).
+- 10 Questions: Solve 10 randomized addition problems.
+- Three-Strike Rule: You get 3 attempts per problem. If you fail, the correct answer is shown.
+- Scoring: Displays your final score out of 10 at the end.
 
-How to Install
-1. Clone this repository.
-2. Install the required libraries:
-   ```bash
-   pip install Pillow pillow-heif
 
 ## Goal
 Practice Python fundamentals and build small CLI tools.
