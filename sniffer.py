@@ -3,11 +3,11 @@ from PIL import Image
 from PIL.ExifTags import TAGS
 from pillow_heif import register_heif_opener
 
-# Enable HEIC support for iPhone photos
+
 register_heif_opener()
 
 def get_decimal_from_dms(dms, ref):
-    """Converts Degrees/Minutes/Seconds to Decimal Degrees for maps"""
+    
     degrees = float(dms[0])
     minutes = float(dms[1]) / 60.0
     seconds = float(dms[2]) / 3600.0
@@ -29,14 +29,14 @@ def main():
         if not exif_data:
             sys.exit(f"\n[!] No metadata found in '{img_path}'. Data might be stripped.")
 
-        # PRINT TABLE HEADERS
+        
         print(f"\n{'PARAMETER':<25} | {'VALUE'}")
         print("-" * 65)
 
         for tag_id, value in exif_data.items():
             tag_name = TAGS.get(tag_id, tag_id)
             
-            # Hide long binary data for clean output
+            
             val_display = f"<{len(value)} bytes>" if isinstance(value, bytes) else value
             print(f"{str(tag_name):<25} | {val_display}")
 
@@ -46,7 +46,7 @@ def main():
 
         if gps_info:
             try:
-                # GPS Tags: 1: N/S, 2: Latitude, 3: E/W, 4: Longitude
+                
                 lat_ref = gps_info[1]
                 lat_dms = gps_info[2]
                 lon_ref = gps_info[3]
@@ -56,7 +56,7 @@ def main():
                 longitude = get_decimal_from_dms(lon_dms, lon_ref)
 
                 print(f"\n" + "="*65)
-                print(f"📍 LOCATION FOUND!")
+                print(f"LOCATION FOUND")
                 print(f"Coordinates: {latitude}, {longitude}")
                 print(f"Google Maps: https://www.google.com/maps?q={latitude},{longitude}")
                 print("="*65)
