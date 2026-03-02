@@ -63,7 +63,7 @@ An interactive CLI game where the user tries to guess a secret number generated 
 
 Focus: practicing the random module, nested while loops, and advanced exception handling with try-except blocks.
 
-### Little Professor 🎓
+### Little Professor 
 A CLI-based math game inspired by the classic 1970s toy. Built as part of the **CS50P** curriculum.
 
 **Features**
@@ -71,6 +71,29 @@ A CLI-based math game inspired by the classic 1970s toy. Built as part of the **
 - 10 Questions: Solve 10 randomized addition problems.
 - Three-Strike Rule: You get 3 attempts per problem. If you fail, the correct answer is shown.
 - Scoring: Displays your final score out of 10 at the end.
+
+### Cyberpunk Identity Generator 
+A Python utility that generates high-tech, dystopian nicknames and secure passwords. 
+
+**Features**
+- Nicknames: Combines gritty adjectives with technical nouns (e.g., `neon-drenched_mainframe`).
+- Passwords: Generates complex 15-character strings from a custom character set.
+
+Usage:
+Run the script and type `go` to generate your new identity.
+
+### Real-Time Currency Exchange 
+A robust Python command-line tool that calculates currency conversion using live exchange rates. It's designed to be simple, fast, and reliable.
+
+**Features**
+- Live Data: Fetches the latest rates from the Open Access Endpoint (ExchangeRate-API).
+- Validation: Includes strict error handling for non-numeric inputs and invalid currency codes.
+- Precision: Outputs formatted currency values with 4-decimal precision for accuracy.
+
+How to Run:
+1. Ensure you have the `requests` library installed:
+   ```bash
+   pip install requests
 
 
 ## Goal
