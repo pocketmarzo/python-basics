@@ -95,6 +95,26 @@ How to Run:
    ```bash
    pip install requests
 
+### Termi-Scroll v1.0
+A command-line interface (CLI) tool for displaying scrolling text animations in the terminal. This project demonstrates string manipulation techniques, infinite loops, and terminal styling in Python.
+
+**Features**
+- Directional Control: supports both left and right scrolling directions.
+- Color Themes: includes Green, Red, and Yellow text options via the Colorama library.
+- Adjustable Velocity: user-defined refresh rate (speed) for the animation.
+- Graceful Termination: implements try-except blocks to handle KeyboardInterrupt (Ctrl+C) without displaying stack trace errors.
+
+Technical Implementation:
+-String Slicing: uses Python slicing syntax (`[1:] + [0]` and `[-1] + [:-1]`) to shift characters.
+- Input Validation: normalizes user input using `.upper()` and `.strip()` methods.
+- Buffer Management: utilizes `end="\r"` and `flush=True` in the print function to update the same line in the terminal.
+
+Installation:
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   pip install colorama
+
 
 ## Goal
 Practice Python fundamentals and build small CLI tools.
