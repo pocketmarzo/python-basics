@@ -115,6 +115,22 @@ Installation:
    ```bash
    pip install colorama
 
+### LogShield-CLI: Traffic Anomaly Detector
+
+A lightweight Python security tool designed to analyze server logs and identify potential DDoS or brute-force threats. It processes raw traffic data to find the most active source of requests.
+
+**Features**
+
+- Efficient Deduplication: Leverages Python sets to instantly identify unique visitors within large log files.
+- Frequency Analysis: Uses optimized dictionary mapping to track the request count for every individual IP address.
+- Threat Identification: Performs an automated search to flag the source of the highest traffic volume (Anomaly Detection).
+
+How to Run:
+1. Clone the repository and ensure you have Python 3.x installed.
+2. Run the script directly from your terminal:
+   ```bash
+   python log_shield.py
+
 
 ## Goal
 Practice Python fundamentals and build small CLI tools.
