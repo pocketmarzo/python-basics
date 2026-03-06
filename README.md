@@ -131,6 +131,12 @@ How to Run:
    ```bash
    python log_shield.py
 
+### Vault-X: String Encryption Utility
+A Python-based implementation of the Caesar Cipher, designed for secure message transformation. This utility shifts characters within a predefined alphabet while maintaining the integrity of special characters and spaces.
 
+**Features**
+- Safe Transformation: Automatically detects non-alphabetic characters (spaces, punctuation) and preserves them without encryption.
+- Circular Shifting: Uses modulo arithmetic to ensure seamless transitions from 'z' back to 'a'.
+- Normalization: Built-in input cleaning to handle case sensitivity and whitespace.
 ## Goal
 Practice Python fundamentals and build small CLI tools.
