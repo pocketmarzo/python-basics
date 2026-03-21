@@ -90,11 +90,6 @@ A robust Python command-line tool that calculates currency conversion using live
 - Validation: Includes strict error handling for non-numeric inputs and invalid currency codes.
 - Precision: Outputs formatted currency values with 4-decimal precision for accuracy.
 
-How to Run:
-1. Ensure you have the `requests` library installed:
-   ```bash
-   pip install requests
-
 ### Termi-Scroll v1.0(termi_scroll.py)
 A command-line interface (CLI) tool for displaying scrolling text animations in the terminal. This project demonstrates string manipulation techniques, infinite loops, and terminal styling in Python.
 
@@ -109,12 +104,6 @@ Technical Implementation:
 - Input Validation: normalizes user input using `.upper()` and `.strip()` methods.
 - Buffer Management: utilizes `end="\r"` and `flush=True` in the print function to update the same line in the terminal.
 
-Installation:
-1. Clone the repository.
-2. Install dependencies:
-   ```bash
-   pip install colorama
-
 ### LogShield-CLI: Traffic Anomaly Detector(LogShield_CLI.py)
 A lightweight Python security tool designed to analyze server logs and identify potential DDoS or brute-force threats. It processes raw traffic data to find the most active source of requests.
 
@@ -123,12 +112,6 @@ A lightweight Python security tool designed to analyze server logs and identify 
 - Efficient Deduplication: Leverages Python sets to instantly identify unique visitors within large log files.
 - Frequency Analysis: Uses optimized dictionary mapping to track the request count for every individual IP address.
 - Threat Identification: Performs an automated search to flag the source of the highest traffic volume (Anomaly Detection).
-
-How to Run:
-1. Clone the repository and ensure you have Python 3.x installed.
-2. Run the script directly from your terminal:
-   ```bash
-   python log_shield.py
 
 ### Vault-X: String Encryption Utility(vaul_x.py)
 A Python-based implementation of the Caesar Cipher, designed for secure message transformation. This utility shifts characters within a predefined alphabet while maintaining the integrity of special characters and spaces.
@@ -146,11 +129,13 @@ This project is a practical exercise in handling file I/O and integrating third-
 - Validation: robust command-line argument checking (ensuring valid file extensions and existence).
 - Data Visualization: utilizes the `tabulate` library to render data into a clean "grid" format.
 
-How to Use:
-1. Install the dependency:
-   ```bash
-   pip install tabulate
-
+### SQL Injection Detector(waf_lite.py)
+A simple Python-based WAF (Web Application Firewall) that detects SQL injection attempts using Regex.
+**Features**
+- Logic Attacks: Catches `' OR 1=1` and similar patterns.
+- SQL Keywords: 
+   Detects `SELECT`, `DROP`, `UNION`, `DELETE` (case-insensitive).
+   Characters:** Blocks `;`, quotes, and `--` comments.
 
 ## Goal
 Practice Python fundamentals and build small CLI tools.
